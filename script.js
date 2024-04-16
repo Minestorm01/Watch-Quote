@@ -12,7 +12,7 @@ function calculateQuote() {
   let finalQuote = inputAmount * 2.5;
 
   // Add an extra $20 for quotes smaller than $30 after multiplying
-  if (finalQuote < 30) {
+  if (finalQuote > 30) {
     finalQuote += 20;
   }
 
